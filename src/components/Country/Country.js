@@ -2,16 +2,17 @@ import React from "react";
 import "./Country.css";
 
 const Country = (props) => {
-  const { name, capital, population, region, flag } = props.country;
+  const { name, flag, capital, population } = props.country;
   return (
     <div className="country">
-      <h3>Country Name: {name}</h3>
-      <img className="flag" src={flag} alt="" />
-      <p>
-        <small>Country region: {region}</small>
-      </p>
-      <p>Country Capital: {capital}</p>
-      <p>Country Population: {population}</p>
+      <h2>{name}</h2>
+      <img src={flag} alt="" />
+      <h4>
+        Capital is: <span className="text-warning">{capital}</span>
+      </h4>
+      <h4>
+        Population: <span className="text-danger">{population}</span>
+      </h4>
     </div>
   );
 };

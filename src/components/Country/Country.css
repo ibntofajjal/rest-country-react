@@ -1,12 +1,19 @@
 .country {
-  background-color: rgb(38, 41, 59);
-  padding: 30px;
-  border: 3px solid tomato;
+  background-color: rgb(56, 63, 70);
+  color: aliceblue;
+  margin: 10px;
+  padding: 100px 20px;
+  /* border: 4px solid rgb(3, 3, 3); */
   border-radius: 20px;
-  margin: 20px;
-  color: rgb(226, 239, 255);
 }
-.flag {
-  width: 200px;
+.country:hover {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  box-shadow: rgba(0, 0, 0, 0.342) 0px 10px 20px,
+    rgba(0, 0, 0, 0.39) 0px 6px 6px;
+}
+.country img {
+  width: 300px;
   border-radius: 10px;
+  margin: 20px 0;
 }

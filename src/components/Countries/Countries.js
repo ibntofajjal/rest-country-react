@@ -11,8 +11,11 @@ const Countries = () => {
   }, []);
   return (
     <div>
-      <h1>Hello From Countries: {countries.length}</h1>
-      <div className="countries-container">
+      <h1 className="text-success mt-5">
+        Country Available: {countries.length}
+      </h1>
+      <h5 className="mb-5">Patching Data From Rest Country API</h5>
+      <div className="component-container">
         {countries.map((country) => (
           <Country key={country.capital} country={country}></Country>
         ))}
